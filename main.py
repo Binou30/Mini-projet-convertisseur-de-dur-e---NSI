@@ -24,6 +24,10 @@ if choix==1:
         except ValueError:
             print("Entrée incorrecte")
             time.sleep(1)
+    jrs1=sec1//86400
+    hrs1=sec1//3600
+    mins1=sec1//60
+    ## Partie à terminer
     print("Cette partie n'est pas encore faite")
 else:
     print("Cette partie n'est pas encore faite")

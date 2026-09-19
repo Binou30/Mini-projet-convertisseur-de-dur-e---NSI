@@ -2,12 +2,17 @@
 ##
 import time
 ##
+## Partie informations
+##
 print("Bonjour, je convertis des secondes en jours, heures, minutes et secondes et des jours, heures, minutes et secondes en secondes !")
 time.sleep(1)
 print("Que veux tu faire?")
 time.sleep(1)
 print("1 : Convertir des secondes en jours, heures, minutes et secondes\n2 : Convertir des jours, heures, minutes et secondes en secondes\n3 : Quitter")
 time.sleep(3)
+##
+## Partie conversion et choix
+##
 choix=input("Alors, qu'est ce que tu choisis ?")
 while choix!="1" and choix!="2" and choix!="3":
     print("Entrée incorrecte")

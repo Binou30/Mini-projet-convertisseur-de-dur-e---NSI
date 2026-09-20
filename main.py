@@ -40,8 +40,63 @@ while choix!=3:
         time.sleep(4)
 
     elif choix==2:
-        print("Cette partie n'est pas encore faite")
-        ## Partie de Victor (il faudra enlever le print au dessus)
+#Alban a utilisé dex expect,j'ai oublié comment ca fonctione donc je  vais copie colle.
+#En plus je dois convertir plusieurs trucs en 1 trucssi j'ai bien compris et flm de faire en court comme tu avais fait Alban.
+
+         e="false"
+        while e=="false":
+            try:
+                jrs2 = int(input("Entre un nombre de jours : "))
+                if jrs2 < 0:
+                    print("Entrée incorrecte")
+                    time.sleep(1)
+                else:
+                    e="true"
+            except ValueError:
+                print("Entrée incorrecte")
+                time.sleep(1)
+
+        while True:
+            try:
+                hrs2 = int(input("Entre un nombre d'heures : "))
+                if hrs2 < 0:
+                    print("Entrée incorrecte")
+                    time.sleep(1)
+                else:
+                    e="false"
+            except ValueError:
+                print("Entrée incorrecte")
+                time.sleep(1)
+
+        while True:
+            try:
+                mins2 = int(input("Entre un nombre de minutes : "))
+                if mins2 < 0:
+                    print("Entrée incorrecte")
+                    time.sleep(1)
+                else:
+                    e="false"
+            except ValueError:
+                print("Entrée incorrecte")
+                time.sleep(1)
+
+        while True:
+            try:
+                sec2 = int(input("Entre un nombre de secondes : "))
+                if sec2 < 0:
+                    print("Entrée incorrecte")
+                    time.sleep(1)
+                else:
+                    e="false"
+            except ValueError:
+                print("Entrée incorrecte")
+                time.sleep(1)
+
+        total = jrs2 * 86400 + hrs2 * 3600 + mins2 * 60 + sec2
+        print(jrs2, "jour(s)", hrs2," heure(s)", mins2," minute(s) et",sec2, "seconde(s) valent {total} secondes.")
+        time.sleep(4)
 
     else:
         print("Au revoir !")
+        #choix = 3
+        

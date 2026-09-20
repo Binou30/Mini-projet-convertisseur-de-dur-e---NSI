@@ -43,7 +43,7 @@ while choix!=3:
 #Alban a utilisé dex expect,j'ai oublié comment ca fonctione donc je  vais copie colle.
 #En plus je dois convertir plusieurs trucs en 1 trucssi j'ai bien compris et flm de faire en court comme tu avais fait Alban.
 
-         e="false"
+        e="false"
         while e=="false":
             try:
                 jrs2 = int(input("Entre un nombre de jours : "))
@@ -59,7 +59,7 @@ while choix!=3:
         while True:
             try:
                 hrs2 = int(input("Entre un nombre d'heures : "))
-                if hrs2 < 0:
+                if hrs2 < 0 or hrs2>24:
                     print("Entrée incorrecte")
                     time.sleep(1)
                 else:
@@ -71,7 +71,7 @@ while choix!=3:
         while True:
             try:
                 mins2 = int(input("Entre un nombre de minutes : "))
-                if mins2 < 0:
+                if mins2 < 0 or mins2>60:
                     print("Entrée incorrecte")
                     time.sleep(1)
                 else:
@@ -83,7 +83,7 @@ while choix!=3:
         while True:
             try:
                 sec2 = int(input("Entre un nombre de secondes : "))
-                if sec2 < 0:
+                if sec2 < 0 or sec2>60:
                     print("Entrée incorrecte")
                     time.sleep(1)
                 else:

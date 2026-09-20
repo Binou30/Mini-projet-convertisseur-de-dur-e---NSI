@@ -93,7 +93,7 @@ while choix!=3:
                 time.sleep(1)
 
         total = jrs2 * 86400 + hrs2 * 3600 + mins2 * 60 + sec2
-        print(jrs2, "jour(s)", hrs2," heure(s)", mins2," minute(s) et",sec2, "seconde(s) valent {total} secondes.")
+        print(jrs2, "jour(s)", hrs2," heure(s)", mins2," minute(s) et",sec2, "seconde(s) valent ",total," secondes.")
         time.sleep(4)
 
     else:

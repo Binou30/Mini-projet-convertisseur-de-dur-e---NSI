@@ -43,6 +43,11 @@ while choix!=3:
 #Alban a utilisé dex expect,j'ai oublié comment ca fonctione donc je  vais copie colle.
 #En plus je dois convertir plusieurs trucs en 1 trucssi j'ai bien compris et flm de faire en court comme tu avais fait Alban.
 
+# Victor j'ai modifié qq trucs de ton programme mais il est très bien. Le problème, c'est que pour les heurs, minutes et 
+# secondes, t'as mis un while True sans break donc tu peux pas sortir de la boucle : à corriger avec le système de varibale
+# égale à false ou true.
+
+
         e="false"
         while e=="false":
             try:

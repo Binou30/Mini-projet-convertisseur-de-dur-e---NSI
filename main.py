@@ -19,15 +19,15 @@ while choix!=3:
     choix=int(choix)
 
     if choix==1:
-        nbint="false"
-        while nbint == "false":
+        nbint=False
+        while nbint==nbint==False:
             try:
                 sec1 = int(input("Entre un nombre de secondes à convertir : "))
                 if sec1 < 0:
                     print("Entrée incorrecte")
                     time.sleep(1)
                 else:
-                    nbint = "true"
+                    nbint = True
             except ValueError:
                 print("Entrée incorrecte")
                 time.sleep(1)
@@ -40,59 +40,54 @@ while choix!=3:
         time.sleep(4)
 
     elif choix==2:
-#Alban a utilisé dex expect,j'ai oublié comment ca fonctione donc je  vais copie colle.
-#En plus je dois convertir plusieurs trucs en 1 trucssi j'ai bien compris et flm de faire en court comme tu avais fait Alban.
-
-# Victor j'ai modifié qq trucs de ton programme mais il est très bien. Le problème, c'est que pour les heurs, minutes et 
-# secondes, t'as mis un while True sans break donc tu peux pas sortir de la boucle : à corriger avec le système de varibale
-# égale à false ou true.
-
-
-        e="false"
-        while e=="false":
+        nbint=False
+        while nbint==False:
             try:
                 jrs2 = int(input("Entre un nombre de jours : "))
                 if jrs2 < 0:
                     print("Entrée incorrecte")
                     time.sleep(1)
                 else:
-                    e="true"
+                    nbint=True
             except ValueError:
                 print("Entrée incorrecte")
                 time.sleep(1)
 
-        while True:
+        nbint=False
+        while nbint==False:
             try:
                 hrs2 = int(input("Entre un nombre d'heures : "))
                 if hrs2 < 0 or hrs2>24:
                     print("Entrée incorrecte")
                     time.sleep(1)
                 else:
-                    e="false"
+                    nbint=True
             except ValueError:
                 print("Entrée incorrecte")
                 time.sleep(1)
 
-        while True:
+        nbint=False
+        while nbint==False:
             try:
                 mins2 = int(input("Entre un nombre de minutes : "))
                 if mins2 < 0 or mins2>60:
                     print("Entrée incorrecte")
                     time.sleep(1)
                 else:
-                    e="false"
+                    nbint=True
             except ValueError:
                 print("Entrée incorrecte")
                 time.sleep(1)
 
-        while True:
+        nbint=False
+        while nbint==False:
             try:
                 sec2 = int(input("Entre un nombre de secondes : "))
                 if sec2 < 0 or sec2>60:
                     print("Entrée incorrecte")
                     time.sleep(1)
                 else:
-                    e="false"
+                    nbint=True
             except ValueError:
                 print("Entrée incorrecte")
                 time.sleep(1)
